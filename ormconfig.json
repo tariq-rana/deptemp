@@ -1,0 +1,12 @@
+{
+    "type": "mssql",
+    "host": "127.0.0.1",
+    "port": 1433,
+    "username": "DeptEmp",
+    "password": "DeptEmp",
+    "database": "DeptEmp",
+    "synchronize": true,
+    "dropSchema": false,
+    "logging": true,
+    "entities": ["dist/**/*.entity{.ts,.js}"]
+}
