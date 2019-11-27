@@ -20,6 +20,9 @@ export class EmpService {
                     retVal = emps
                 }
             })
+            .catch(err=> {
+                retVal = err.message;
+            });
 
         return retVal;
     }
@@ -35,12 +38,14 @@ export class EmpService {
                     retVal = emp
                 }
             })
-
+            .catch(err=> {
+                retVal = err.message;
+            });
         return retVal;
         
     }
 
-    async insertEmp(empDTO:EmpDTO){3 
+    async insertEmp(empDTO:EmpDTO){ 
         let retVal:any;
         await this.empRepository.save(empDTO)
             .then(emp => {
@@ -51,7 +56,9 @@ export class EmpService {
                     retVal = emp
                 }
             })
-
+            .catch(err=> {
+                retVal = err.message;
+            });
         return retVal;
     }
 
@@ -82,9 +89,9 @@ export class EmpService {
                 retVal = emp
             }
         })
-
+        .catch(err=> {
+            retVal = err.message;
+        });
         return retVal;
     }
-
-
 }
