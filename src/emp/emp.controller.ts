@@ -28,7 +28,7 @@ export class EmpController {
     }
 
     @Delete(':id')
-    deleteEmp(empId:number){
+    deleteEmp(@Param('id')  empId:number){
         return this.empService.deleteEmp(empId);
     }
 

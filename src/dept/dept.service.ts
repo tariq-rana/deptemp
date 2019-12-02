@@ -28,7 +28,7 @@ export class DeptService {
             }
         })
         .catch(err=> {
-            retVal = err.message;
+            retVal = {error:err.message};
         });
         return retVal;
     }
@@ -44,7 +44,7 @@ export class DeptService {
             }
         })
         .catch(err=> {
-            retVal = err.message;
+            retVal = {error:err.message};
         });
         return retVal;
     }
@@ -60,7 +60,7 @@ export class DeptService {
             }
         })
         .catch(err=> {
-            retVal = err.message;
+            retVal = {error:err.message};
         });
         return retVal;
     }
@@ -77,13 +77,9 @@ export class DeptService {
             }
         })
         .catch(err=> {
-            retVal = err.message;
+            retVal = {error:err.message};
         });
         return retVal;
     }
-
-
-
-
 
 }

@@ -21,7 +21,7 @@ export class EmpService {
                 }
             })
             .catch(err=> {
-                retVal = err.message;
+                retVal = {error:err.message};
             });
 
         return retVal;
@@ -39,7 +39,7 @@ export class EmpService {
                 }
             })
             .catch(err=> {
-                retVal = err.message;
+                retVal = {error:err.message};
             });
         return retVal;
         
@@ -57,7 +57,7 @@ export class EmpService {
                 }
             })
             .catch(err=> {
-                retVal = err.message;
+                retVal = {error:err.message};
             });
         return retVal;
     }
@@ -73,7 +73,7 @@ export class EmpService {
             }
         })
         .catch(err=> {
-            retVal = err.message;
+            retVal = {error:err.message};
         });
         return retVal;
     }
@@ -90,7 +90,7 @@ export class EmpService {
             }
         })
         .catch(err=> {
-            retVal = err.message;
+            retVal = {error:err.message};
         });
         return retVal;
     }
